@@ -1,0 +1,541 @@
+// nav 
+.nav{
+    border-bottom: 2px solid #f1f1f1;
+    .container{
+        .list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                width: 20%;
+                text-align: center;
+                a{
+                    font-size: 1.2em;
+                    font-weight: bold;
+                    color: #a9a9a9;
+                    padding: 1em 0em;
+                    border-bottom: 3px solid transparent;
+                    transition: all linear .3s;
+                    &:hover{
+                        color: #fc5457;
+                        border-bottom: 3px solid #fc5457;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:178px) and (min-height:1024px) {
+        &{
+            .container{
+                .list{
+                    li{
+                        a{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) and (min-height:1366px) {
+        &{
+            .container{
+                .list{
+                    li{
+                        a{
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:370px) {
+        &{
+            .container{
+                .list{
+                    li{
+                        a{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:330px) {
+        &{
+            .container{
+                .list{
+                    li{
+                        a{
+                            font-size: 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        &{
+            .container{
+                .list{
+                    li{
+                        a{
+                            font-size: .8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+//banner
+.banner{
+    padding: 2em 0em 1em ;
+    border-bottom: 4px solid #f1f1f1;
+    .container{
+        .thumb{
+            border-radius:5px;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        .info{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 1em 0em;
+        }
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                span{
+                    font-size: 1.5em;
+                    color: #f57d89;
+                    font-weight: bold;
+                }
+            }
+            .right{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 40%;
+                .img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                div{
+                    width: 24%;
+                }
+                .test{
+                    font-size: 1.5em;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #fc4e57;
+                    padding-right: .5em;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:540px) and (min-height:720px) {
+        &{
+            .container{
+                .info{
+                    font-size: 1.8em;
+                }
+                .title{
+                    .left{
+                        span{
+                            font-size: 2em;
+                        }
+                    }
+                    .right{
+                        width: 33%;
+                        .img{
+                            img{
+                                width: 85%;
+                            }
+                        }
+                        .test{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (min-height:1024px) {
+        &{
+            .container{
+                .info{
+                    font-size: 2.5em;
+                }
+                .title{
+                    .left{
+                        span{
+                            font-size: 3em;
+                        }
+                    }
+                    .right{
+                        width: 33%;
+                        .img{
+                            img{
+                                width: 85%;
+                            }
+                        }
+                        .test{
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) and (min-height:1366px) {
+        &{
+            .container{
+                .info{
+                    font-size: 3em;
+                }
+                .title{
+                    .left{
+                        span{
+                            font-size: 3em;
+                        }
+                    }
+                    .right{
+                        width: 33%;
+                        .img{
+                            img{
+                                width: 77%;
+                            }
+                        }
+                        .test{
+                            font-size: 3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:300px) {
+        &{
+            .container{
+                .info{
+                    font-size: 1em;
+                }
+                .title{
+                    .left{
+                        span{
+                            font-size: 1.2em;
+                        }
+                    }
+                    .right{
+                        .img{
+                            img{
+                                width: 80%;
+                            }
+                        }
+                        .test{
+                            font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+}
+
+// skewer
+.skewer{
+    padding: 2em 0em 1em;
+    .container{
+        .title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 65%;
+                .thumb{
+                    width: 35%;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .theme{
+                    width: 60%;
+                    span{
+                        display: block;
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        color: #6a5256;
+                    }
+                    .test{
+                        color:#fc5457;
+                    }
+                }
+            }
+            .right{
+                width: 30%;
+                .btn{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    color: #f04555;
+                    background: #fdf2f2;
+                    border-radius: 20px;
+                    padding: .4em 1em;
+                }
+            }
+        }
+        .list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top:1em ;
+            .item{
+                width: 32.8%;
+                .img{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .info{
+                    font-weight: bold;
+                    padding: 1em 0em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:540px) and (min-height:720px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .thumb{
+                            width: 30%;
+                            img{
+                                width: 80%;
+                            }
+                        }
+                        .theme{
+                            width: 70%;
+                            span{
+                                font-size: 2em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (min-height:1024px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .thumb{
+                            width: 30%;
+                        }
+                        .theme{
+                            span{
+                                font-size: 2.5em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 2em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) and (min-height:1366px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .theme{
+                            span{
+                                font-size: 3.5em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 3em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            font-size: 2.5em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:470px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .thumb{
+                            width: 30%;
+                        }
+                        .theme{
+                            width: 67%;
+                            span{
+                                font-size: 1.5em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            width: 100%;
+                            font-size: 1.3em;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:370px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .thumb{
+                            width: 30%;
+                        }
+                        .theme{
+                            width: 67%;
+                            span{
+                                font-size: 1.3em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 1.3em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            width: 100%;
+                            font-size: 1em;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:330px) {
+        &{
+            .container{
+                .title{
+                    .left{
+                        .thumb{
+                            width: 30%;
+                        }
+                        .theme{
+                            width: 67%;
+                            span{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                    .right{
+                        text-align: right;
+                        .btn{
+                            font-size: 1em;
+                        }
+                    }
+                }
+                .list{
+                    .item{
+                        .info{
+                            width: 100%;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
